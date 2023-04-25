@@ -1,0 +1,86 @@
+.bg div{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -999;
+}
+
+.bg div img {
+    position: fixed;
+    min-height: 100%;
+    width: 100%;
+}
+
+/* 設定動畫週期 */
+.bg div {
+    position: absolute;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-animation: round 50s linear infinite;
+    animation: round 50s linear infinite;
+}
+
+@-webkit-keyframes round {
+    2% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /*淡入*/
+    }
+    20% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /*靜止*/
+    }
+    22% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        /*淡出*/
+    }
+}
+
+@keyframes round {
+    2% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /*淡入*/
+    }
+    20% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /*靜止*/
+    }
+    22% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        /*淡出*/
+    }
+}
+
+/* 每張圖片進場時間相隔10秒 */
+.bg div:nth-child(5) {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+    
+.bg div:nth-child(4) {
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+}
+    
+.bg div:nth-child(3) {
+    -webkit-animation-delay: 20s;
+    animation-delay: 20s;
+}
+    
+.bg div:nth-child(2) {
+    -webkit-animation-delay: 30s;
+    animation-delay: 30s;
+}
+    
+.bg div:nth-child(1) {
+    -webkit-animation-delay: 40s;
+    animation-delay: 40s;
+}
+
+        
