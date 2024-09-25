@@ -1,5 +1,5 @@
 <?php 
-    date_default_timezone_set('Asia/Shanghai');//設定時區
+    date_default_timezone_set('Asia/Taipei');//設定時區
     session_start();
     header('Content-type:text/html;charset=utf-8');
     define('ASD_HOST','localhost');
